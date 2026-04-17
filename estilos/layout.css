@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;      
+}
+
+.logo{
+    width: 80px; /* define a largura */
+    height: 80px; /* define a altura */
+    border-radius: 50%;
+}
+
+BODY>header{
+    background-color: #333; /* cor de fundo do elemento */
+    color: #fff; /* cor da fonte */
+    display: flex; /* a posição do elemento em relação a tela */
+    align-items: center;  /* alinhamento dos itens do elemento, neste caso do header */
+    padding: 20px; /* espaçamento interno do elemento, adiciona espaço entre o conteúdo e as bordas do contêiner e (elemento) */
+    position: fixed; /* Posição do Elemento */
+    top: 0;
+    width: 100%;
+    height: 80px;
+    justify-content: start;
+    z-index: 1100; /* Mantém o cabeçalho acima do resto */
+    /* Define a camada do elemento, quanto maior o valor mais à frente ele fica sobre os outros elementos */
+}
+
+header h1{
+    margin: 0;
+    font-size: 24px;
+}
+
+header figure {
+    margin: 0 15px;
+}
+
+nav{
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    display: block;
+    clear: both;
+    margin-top: 110px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+/*Estilos do conteúdo principalmente(main)*/
+main{
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; /* Espaçamento abaixo do elemento anterior, que neste caso nav */
+}
+
+/*Estilo para o rodapé*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
